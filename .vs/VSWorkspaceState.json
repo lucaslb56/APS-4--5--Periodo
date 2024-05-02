@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Cliente2"
+    "\\Cliente2",
+    "\\Cliente2\\Cliente2"
   ],
-  "SelectedNode": "\\Cliente2\\Form1.Designer.cs",
+  "SelectedNode": "\\Cliente2\\Cliente2\\CommunicationManager.cs",
   "PreviewInSolutionExplorer": false
 }

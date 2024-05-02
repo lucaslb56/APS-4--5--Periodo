@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Servidor;
+using System;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
@@ -12,21 +13,9 @@ class Program
         // Endereço IP e porta do servidor
         string ip = "127.0.0.1";
         int port = 8888;
-
-        // Criar um ponto de extremidade de IP para o servidor
-        IPAddress ipAddress = IPAddress.Parse(ip);
-        IPEndPoint endPoint = new IPEndPoint(ipAddress, port);
-
-        // Iniciar TcpListener
-        TcpListener listener = new TcpListener(ipAddress, port);
-        listener.Start();
-
-        Console.WriteLine("Servidor iniciado. Aguardando conexões...");
-
-        // Definindo clientes
-        List<TcpClient> clients = new List<TcpClient>(); 
-        receiveConnection(listener, clients);
-
+		ServerManager server = new ServerManager(ip, port);
+        server.startServer();
+		Console.WriteLine("Servidor iniciado. Aguardando conexões...");
         Console.ReadLine();
     }
 
@@ -54,6 +43,7 @@ class Program
                     if (message == null)
                         break; // Cliente desconectado
                     
+                    Console.WriteLine($"Cliente ({client.Client.RemoteEndPoint}): {message}");
                    foreach (TcpClient receiver in clients)
                    {   
                         if (receiver == client) { continue; } 

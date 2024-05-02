@@ -27,3 +27,4 @@ C:\Users\lucas\OneDrive\Área de Trabalho\OneDrive\Documentos\GitHub\APS-4--5--P
 C:\Users\lucas\OneDrive\Área de Trabalho\OneDrive\Documentos\GitHub\APS-4--5--Periodo\Servidor\obj\Debug\net8.0\Servidor.pdb
 C:\Users\lucas\OneDrive\Área de Trabalho\OneDrive\Documentos\GitHub\APS-4--5--Periodo\Servidor\obj\Debug\net8.0\Servidor.genruntimeconfig.cache
 C:\Users\lucas\OneDrive\Área de Trabalho\OneDrive\Documentos\GitHub\APS-4--5--Periodo\Servidor\obj\Debug\net8.0\ref\Servidor.dll
+C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Servidor\obj\Debug\net8.0\Servidor.sourcelink.json
