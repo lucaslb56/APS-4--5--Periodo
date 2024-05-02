@@ -63,7 +63,7 @@ namespace Cliente2
 			{
 				Console.WriteLine(ex.Message);
 			}finally {
-				form.updateStatus(false);
+				form.updateStatus(false, "Servidor parou de responder!");
 				disconnectServer();
 			}
 			

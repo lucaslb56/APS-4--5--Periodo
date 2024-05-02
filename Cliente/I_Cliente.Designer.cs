@@ -201,7 +201,7 @@
 			FormBorderStyle = FormBorderStyle.FixedDialog;
 			Margin = new Padding(4, 3, 4, 3);
 			Name = "Form1";
-			Text = "APSzap";
+			Text = "APS";
 			Load += Form1_Load;
 			ResumeLayout(false);
 			PerformLayout();
