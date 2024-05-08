@@ -1,0 +1,7 @@
+C:\Users\lucas\Documents\Instalações\testetttt\Cliente.pdb
+C:\Users\lucas\Documents\Instalações\testetttt\D3DCompiler_47_cor3.dll
+C:\Users\lucas\Documents\Instalações\testetttt\PenImc_cor3.dll
+C:\Users\lucas\Documents\Instalações\testetttt\PresentationNative_cor3.dll
+C:\Users\lucas\Documents\Instalações\testetttt\vcruntime140_cor3.dll
+C:\Users\lucas\Documents\Instalações\testetttt\wpfgfx_cor3.dll
+C:\Users\lucas\Documents\Instalações\testetttt\Cliente.exe

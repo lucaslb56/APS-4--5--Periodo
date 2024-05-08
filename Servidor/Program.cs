@@ -17,8 +17,6 @@ class Program
         int port = 8888;
 		ServerManager server = new ServerManager(ip, port);
         server.startServer();
-		Console.WriteLine("Servidor iniciado.");
-        Console.ReadLine();
     }
 
     

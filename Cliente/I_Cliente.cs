@@ -1,8 +1,7 @@
 using System.Net;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Security.Authentication;
 
-namespace Cliente2
+namespace Cliente
 {
 	public partial class I_Cliente : Form
 	{
@@ -62,20 +61,25 @@ namespace Cliente2
 					Cursor = Cursors.WaitCursor;
 					if (!IPAddress.TryParse(inpIP.Text, out IPAddress ip))
 					{
-						updateStatus(false, "IP inv�lido!");
+						updateStatus(false, "IP inválido!");
 						return;
 						
 					}
 					if (!int.TryParse(inpPorta.Text, out int port))
 					{
-						updateStatus(false, "Porta inv�lida!");
+						updateStatus(false, "Porta inválida!");
 						return;
 					}
 					string username = inpUsuario.Text;
 					
 					ComManager.connectServer(ip, port, username);
 					updateStatus(true);
-				}catch (Exception ex)
+				}
+				catch (AuthenticationException)
+				{
+					updateStatus(false, "Falha ao autentificar! verifique a aplicação.");
+				}
+				catch (Exception ex)
 				{
 					updateStatus(false, ex.Message);
 				}

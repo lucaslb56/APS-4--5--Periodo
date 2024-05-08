@@ -20,7 +20,6 @@ C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\bin\Debug\net8.0-win
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\bin\Debug\net8.0-windows\Cliente.runtimeconfig.json
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\bin\Debug\net8.0-windows\Cliente.dll
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\bin\Debug\net8.0-windows\Cliente.pdb
-C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\Cliente2.I_Cliente.resources
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\Cliente.csproj.GenerateResource.cache
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\Cliente.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\Cliente.AssemblyInfoInputs.cache
@@ -32,3 +31,4 @@ C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-win
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\Cliente.pdb
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\Cliente.genruntimeconfig.cache
 C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\ref\Cliente.dll
+C:\Users\lucas\Documents\GitHub\APS 4° 5° Periodo\Cliente\obj\Debug\net8.0-windows\Cliente.I_Cliente.resources

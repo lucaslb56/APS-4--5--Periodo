@@ -1,4 +1,4 @@
-﻿namespace Cliente2
+﻿namespace Cliente
 {
 	partial class I_Cliente
 	{
@@ -177,7 +177,7 @@
 			label1.Text = "Usuário";
 			label1.TextAlign = ContentAlignment.TopRight;
 			// 
-			// Form1
+			// I_Cliente
 			// 
 			AutoScaleDimensions = new SizeF(8F, 17F);
 			AutoScaleMode = AutoScaleMode.Font;
@@ -200,7 +200,7 @@
 			ForeColor = SystemColors.ControlLight;
 			FormBorderStyle = FormBorderStyle.FixedDialog;
 			Margin = new Padding(4, 3, 4, 3);
-			Name = "Form1";
+			Name = "I_Cliente";
 			Text = "APS";
 			Load += Form1_Load;
 			ResumeLayout(false);

@@ -6,11 +6,12 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Cliente2
+namespace Cliente
 {
 	internal class CommunicationManager
 	{
@@ -19,6 +20,7 @@ namespace Cliente2
 		private NetworkStream stream;
 		private StreamWriter writer;
 		private StreamReader reader;
+		private string token = "TOKEN_APS_4_5_CHAT_TCP_IP";
 		public CommunicationManager(I_Cliente form)
 		{
 			this.form = form;
@@ -32,8 +34,17 @@ namespace Cliente2
 			stream = client.GetStream();
 			writer = new StreamWriter(stream);
 			reader = new StreamReader(stream);
-			sendMessage(userName);
+			serverAuthentication(userName);
 			waitMessage();
+		}
+
+		public void serverAuthentication(string userName)
+		{
+			string authentication = token + ":" + userName;
+			writer.WriteLine(authentication);
+			writer.Flush();
+			string response = reader.ReadLine();
+			if (response == null) throw new AuthenticationException();
 		}
 
 		public async Task sendMessage(string mensagem)

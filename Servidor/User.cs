@@ -25,14 +25,14 @@ namespace Servidor
 			writer = new StreamWriter(stream);
 		}
 		
-		public void setUserName(List<User> users){
-			userName = reader.ReadLine();
+		public void setUserName(string username, List<User> users){
+			this.userName = username;
 			int d = 1;
 			while (true){
 				User foundUser = users.FirstOrDefault(user => (user.userName == userName) && user.Tcp.Connected);
 				if (foundUser != null){
-					userName = userName+d.ToString();
-				}else{ break; }
+					this.userName = username + d.ToString();
+				}else break; 
 			}			
 			
 		}
