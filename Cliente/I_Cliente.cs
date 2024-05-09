@@ -11,10 +11,6 @@ namespace Cliente
 		public I_Cliente()
 		{
 			InitializeComponent();
-		}
-
-		private void Form1_Load(object sender, EventArgs e)
-		{
 			ComManager = new CommunicationManager(this);
 		}
 
@@ -107,6 +103,7 @@ namespace Cliente
 		public void clearMessage(object sender, EventArgs e)
 		{
 			pnMensagens.Controls.Clear();
+			locMsgY = 10;
 		}
 	}
 }

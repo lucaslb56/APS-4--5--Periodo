@@ -230,7 +230,6 @@
 			Margin = new Padding(4, 3, 4, 3);
 			Name = "I_Cliente";
 			Text = "APS";
-			Load += Form1_Load;
 			gpMensagens.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
