@@ -28,7 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			pnMensagens = new GroupBox();
+			gpMensagens = new GroupBox();
+			pnMensagens = new Panel();
 			btEnviar = new Button();
 			ipMessage = new TextBox();
 			label2 = new Label();
@@ -41,25 +42,37 @@
 			btConectar = new Button();
 			inpUsuario = new TextBox();
 			label1 = new Label();
+			btclearMessages = new Button();
+			gpMensagens.SuspendLayout();
 			SuspendLayout();
+			// 
+			// gpMensagens
+			// 
+			gpMensagens.BackColor = SystemColors.Control;
+			gpMensagens.Controls.Add(pnMensagens);
+			gpMensagens.Location = new Point(391, 12);
+			gpMensagens.Margin = new Padding(4, 3, 4, 3);
+			gpMensagens.Name = "gpMensagens";
+			gpMensagens.Padding = new Padding(4, 3, 4, 3);
+			gpMensagens.Size = new Size(609, 542);
+			gpMensagens.TabIndex = 0;
+			gpMensagens.TabStop = false;
+			gpMensagens.Text = "Mensagens";
 			// 
 			// pnMensagens
 			// 
-			pnMensagens.BackColor = SystemColors.Control;
-			pnMensagens.Location = new Point(391, 12);
-			pnMensagens.Margin = new Padding(4, 3, 4, 3);
+			pnMensagens.AutoScroll = true;
+			pnMensagens.BackColor = SystemColors.ButtonFace;
+			pnMensagens.Location = new Point(7, 22);
 			pnMensagens.Name = "pnMensagens";
-			pnMensagens.Padding = new Padding(4, 3, 4, 3);
-			pnMensagens.Size = new Size(609, 542);
-			pnMensagens.TabIndex = 0;
-			pnMensagens.TabStop = false;
-			pnMensagens.Text = "Mensagens";
+			pnMensagens.Size = new Size(595, 514);
+			pnMensagens.TabIndex = 15;
 			// 
 			// btEnviar
 			// 
 			btEnviar.BackColor = SystemColors.ActiveCaption;
 			btEnviar.FlatStyle = FlatStyle.System;
-			btEnviar.Location = new Point(253, 495);
+			btEnviar.Location = new Point(253, 487);
 			btEnviar.Margin = new Padding(4, 3, 4, 3);
 			btEnviar.Name = "btEnviar";
 			btEnviar.Size = new Size(130, 30);
@@ -70,11 +83,11 @@
 			// 
 			// ipMessage
 			// 
-			ipMessage.Location = new Point(4, 495);
+			ipMessage.Location = new Point(4, 487);
 			ipMessage.Multiline = true;
 			ipMessage.Name = "ipMessage";
 			ipMessage.ScrollBars = ScrollBars.Horizontal;
-			ipMessage.Size = new Size(242, 56);
+			ipMessage.Size = new Size(242, 64);
 			ipMessage.TabIndex = 2;
 			// 
 			// label2
@@ -90,10 +103,11 @@
 			// 
 			// lbStatus
 			// 
+			lbStatus.AutoEllipsis = true;
 			lbStatus.ForeColor = Color.FromArgb(192, 0, 0);
 			lbStatus.Location = new Point(51, 99);
 			lbStatus.Name = "lbStatus";
-			lbStatus.Size = new Size(270, 200);
+			lbStatus.Size = new Size(270, 75);
 			lbStatus.TabIndex = 4;
 			lbStatus.Text = "Desconectado";
 			// 
@@ -177,12 +191,26 @@
 			label1.Text = "Usuário";
 			label1.TextAlign = ContentAlignment.TopRight;
 			// 
+			// btclearMessages
+			// 
+			btclearMessages.BackColor = SystemColors.ActiveCaption;
+			btclearMessages.FlatStyle = FlatStyle.System;
+			btclearMessages.Location = new Point(253, 523);
+			btclearMessages.Margin = new Padding(4, 3, 4, 3);
+			btclearMessages.Name = "btclearMessages";
+			btclearMessages.Size = new Size(130, 28);
+			btclearMessages.TabIndex = 14;
+			btclearMessages.Text = "Limpar Conversa";
+			btclearMessages.UseVisualStyleBackColor = false;
+			btclearMessages.Click += clearMessage;
+			// 
 			// I_Cliente
 			// 
 			AutoScaleDimensions = new SizeF(8F, 17F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
 			ClientSize = new Size(1013, 566);
+			Controls.Add(btclearMessages);
 			Controls.Add(label1);
 			Controls.Add(inpUsuario);
 			Controls.Add(btConectar);
@@ -195,7 +223,7 @@
 			Controls.Add(label2);
 			Controls.Add(ipMessage);
 			Controls.Add(btEnviar);
-			Controls.Add(pnMensagens);
+			Controls.Add(gpMensagens);
 			Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			ForeColor = SystemColors.ControlLight;
 			FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -203,13 +231,14 @@
 			Name = "I_Cliente";
 			Text = "APS";
 			Load += Form1_Load;
+			gpMensagens.ResumeLayout(false);
 			ResumeLayout(false);
 			PerformLayout();
 		}
 
 		#endregion
 
-		private GroupBox pnMensagens;
+		private GroupBox gpMensagens;
 		private Button btEnviar;
 		private TextBox ipMessage;
 		private Label label1;
@@ -222,5 +251,7 @@
 		private TextBox inpPorta;
 		private Button btConectar;
 		private TextBox inpUsuario;
+		private Panel pnMensagens;
+		private Button btclearMessages;
 	}
 }

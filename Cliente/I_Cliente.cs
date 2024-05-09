@@ -5,7 +5,7 @@ namespace Cliente
 {
 	public partial class I_Cliente : Form
 	{
-		int locMsgY = 25;
+		int locMsgY = 10;
 		CommunicationManager ComManager;
 		public bool conected = false;
 		public I_Cliente()
@@ -63,7 +63,7 @@ namespace Cliente
 					{
 						updateStatus(false, "IP inválido!");
 						return;
-						
+
 					}
 					if (!int.TryParse(inpPorta.Text, out int port))
 					{
@@ -71,7 +71,7 @@ namespace Cliente
 						return;
 					}
 					string username = inpUsuario.Text;
-					
+
 					ComManager.connectServer(ip, port, username);
 					updateStatus(true);
 				}
@@ -84,11 +84,15 @@ namespace Cliente
 					updateStatus(false, ex.Message);
 				}
 			}
-			
+
 		}
 
 		public void addMessage(string message)
 		{
+			int qtdMsgs = pnMensagens.Controls.Count;
+			if (qtdMsgs != 0)  
+				locMsgY = pnMensagens.Controls[qtdMsgs-1].Top + pnMensagens.Controls[qtdMsgs-1].Height + 10;
+						
 			Label lbMessage = new Label();
 			lbMessage.AutoSize = true;
 			lbMessage.MaximumSize = new Size(550, 0);
@@ -98,7 +102,11 @@ namespace Cliente
 			lbMessage.TabIndex = 3;
 			lbMessage.Location = new Point(3, locMsgY);
 			pnMensagens.Controls.Add(lbMessage);
-			locMsgY += 30;
+		}
+
+		public void clearMessage(object sender, EventArgs e)
+		{
+			pnMensagens.Controls.Clear();
 		}
 	}
 }
