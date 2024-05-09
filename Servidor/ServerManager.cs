@@ -88,7 +88,7 @@ namespace Servidor
 				string[] authInfors = authentication.Split(":");
 				if (authInfors[0] != token) throw new AuthenticationException();
 				string username = authInfors[1];
-				writer.Write(username);
+				writer.WriteLine(username);
 				writer.Flush();
 				return username;
 				
@@ -108,7 +108,7 @@ namespace Servidor
 					// Ler mensagem do cliente
 					string message = await user.reader.ReadLineAsync();
 					// Verifica possível desconexão do cliente
-					if (message == null && !user.Tcp.Connected){
+					if (message == null){
 						if (monitorConexoes) Console.WriteLine("Usuário: "+user.userName+" desconectou");
 						break;
 					}
@@ -118,7 +118,7 @@ namespace Servidor
 					foreach (User otherUser in users)
 					{   
 						if(otherUser.Tcp.Connected){
-							await otherUser.writer.WriteLineAsync($"({user.userName}): {message}");
+							await otherUser.writer.WriteLineAsync($"[{user.userName}]: {message}");
 							await otherUser.writer.FlushAsync();
 						}						
 					}  
@@ -126,7 +126,8 @@ namespace Servidor
 			}
 			catch (Exception ex)
 			{
-				Console.WriteLine($"Houve um erro ao tratar a mensagem do usuário: {user.userName}");
+				if (!user.Tcp.Connected) Console.WriteLine("Usuário: "+user.userName+" desconectou");
+				else Console.WriteLine($"Houve um erro ao tratar a mensagem do usuário: {user.userName}");
 			}
 			finally{
 				// Libera os recursos desse usuário

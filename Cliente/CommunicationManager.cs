@@ -56,7 +56,7 @@ namespace Cliente
 			}
 			catch (Exception ex)
 			{
-				Console.WriteLine(ex.Message);
+				form.addMessage("[System]:Erro ao enviar mensagem!");
 			}
 		}
 
@@ -66,15 +66,17 @@ namespace Cliente
 				while (true)
 				{
 					string message = await reader.ReadLineAsync();
-					if (message == null){ break; }
+					if (message == null){ 
+						form.updateStatus(false, "Servidor parou de responder!");
+						break; 
+					}
 					form.addMessage(message);
 				}
 			
 			}catch (Exception ex)
 			{
-				Console.WriteLine(ex.Message);
+				if (form.conected) form.updateStatus(false, "Servidor parou de responder!");
 			}finally {
-				form.updateStatus(false, "Servidor parou de responder!");
 				disconnectServer();
 			}
 			

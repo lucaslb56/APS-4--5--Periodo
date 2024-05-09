@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{61334689-F835-4A15-A26C-9F55157C77D4}|Servidor.csproj|C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61334689-F835-4A15-A26C-9F55157C77D4}|Servidor.csproj|solutionrelative:servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61334689-F835-4A15-A26C-9F55157C77D4}|Servidor.csproj|c:\\users\\lucas\\onedrive\\\u00E1rea de trabalho\\onedrive\\documentos\\github\\aps-4--5--periodo\\servidor\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61334689-F835-4A15-A26C-9F55157C77D4}|Servidor.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61334689-F835-4A15-A26C-9F55157C77D4}|Servidor.csproj|C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61334689-F835-4A15-A26C-9F55157C77D4}|Servidor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:30:58.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:30:59.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServerManager.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\ServerManager.cs",
+              "RelativeDocumentMoniker": "ServerManager.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\\u00C1rea de Trabalho\\OneDrive\\Documentos\\GitHub\\APS-4--5--Periodo\\Servidor\\ServerManager.cs",
+              "RelativeToolTip": "ServerManager.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwEEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:30:59.495Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

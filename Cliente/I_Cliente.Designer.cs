@@ -93,7 +93,7 @@
 			lbStatus.ForeColor = Color.FromArgb(192, 0, 0);
 			lbStatus.Location = new Point(51, 99);
 			lbStatus.Name = "lbStatus";
-			lbStatus.Size = new Size(320, 200);
+			lbStatus.Size = new Size(270, 200);
 			lbStatus.TabIndex = 4;
 			lbStatus.Text = "Desconectado";
 			// 

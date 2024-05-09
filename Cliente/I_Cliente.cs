@@ -7,7 +7,7 @@ namespace Cliente
 	{
 		int locMsgY = 25;
 		CommunicationManager ComManager;
-		bool conected = false;
+		public bool conected = false;
 		public I_Cliente()
 		{
 			InitializeComponent();

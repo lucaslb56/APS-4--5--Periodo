@@ -29,9 +29,9 @@ namespace Servidor
 			this.userName = username;
 			int d = 1;
 			while (true){
-				User foundUser = users.FirstOrDefault(user => (user.userName == userName) && user.Tcp.Connected);
+				User? foundUser = users.FirstOrDefault(user => (user.userName == userName) && user.Tcp.Connected);
 				if (foundUser != null){
-					this.userName = username + d.ToString();
+					this.userName = $"{username}({d.ToString()})";
 				}else break; 
 			}			
 			
